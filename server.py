@@ -13,7 +13,7 @@ print(key)
 
 client = OpenAI(api_key=key)
 
-assistantId = "asst_9gQjGfbaDczZNzKFSvEwQPAy"
+assistantId = os.getenv("ASSISTANT_ID")
 
 @app.route('/api/stt/threads', methods=['POST'])
 def createSttThread():
